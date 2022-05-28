@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../bloc/x_o_bloc.dart';
+import '../pages/game_page/bloc/x_o_bloc.dart';
 import 'tile.dart';
 
 class GridLayout extends StatelessWidget {

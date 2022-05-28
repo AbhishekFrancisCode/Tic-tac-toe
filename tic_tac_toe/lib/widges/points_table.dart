@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../bloc/x_o_bloc.dart';
+import '../pages/game_page/bloc/x_o_bloc.dart';
 
 class PointsTablle extends StatelessWidget {
   const PointsTablle({Key? key}) : super(key: key);
@@ -43,7 +43,12 @@ class PointsTablle extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      Text("${xWins.toString()} Wins"),
+                      Text(
+                        xWins.toString(),
+                        style: const TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
                     ],
                   ),
                 )),
@@ -64,7 +69,12 @@ class PointsTablle extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      Text("${oWins.toString()} Wins"),
+                      Text(
+                        oWins.toString(),
+                        style: const TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
                     ],
                   ),
                 )),
@@ -85,7 +95,12 @@ class PointsTablle extends StatelessWidget {
                       const SizedBox(
                         height: 10,
                       ),
-                      Text("${draw.toString()} Draw"),
+                      Text(
+                        draw.toString(),
+                        style: const TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
                     ],
                   ),
                 ))
